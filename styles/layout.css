@@ -1,3 +1,11 @@
 :root {
   --slidev-theme-primary: #5d8392;
 }
+
+.slidev-slide-container {
+  @apply bg-stone-50 text-stone-800 text-2xl;
+}
+
+.slidev-layout {
+  @apply h-full pt-6 px-6 pb-10;
+}
