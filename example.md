@@ -1,16 +1,25 @@
 ---
 theme: ./
+themeConfig:
+  footerLeft: "イベントの名前や日付"
+  footerRight: "© 2026 kskwtnk"
 ---
 
-# Slidev Theme Starter
+<v-click at="1">
 
-Presentation slides for developers
+<p class="text-base">タイトルの上に表示されるテキストはこのようになります</p>
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" flex="~ justify-center items-center gap-2" hover="bg-white bg-opacity-10">
-    Press Space for next page <div class="i-carbon:arrow-right inline-block"/>
-  </span>
-</div>
+</v-click>
+
+# kskwtnkによるSlidevテーマ
+
+これは`layout: cover`です
+
+<v-click  at="1">
+
+複数行の本文がある場合はこのように表示されます
+
+</v-click>
 
 ---
 
