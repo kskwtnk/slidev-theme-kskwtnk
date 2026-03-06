@@ -3,27 +3,27 @@
 }
 
 .slidev-slide-container {
-  @apply bg-stone-50 text-stone-800 text-2xl;
+  --at-apply: bg-stone-50 text-stone-800 text-2xl;
 }
 
 .slidev-layout {
-  @apply h-full pt-8 px-6 pb-12;
+  --at-apply: h-full pt-8 px-6 pb-12;
 
   ol {
-    @apply list-decimal;
+    --at-apply: list-decimal;
   }
 
   ul {
-    @apply list-disc;
+    --at-apply: list-disc;
   }
 
   ol,
   ul {
-    @apply pl-[1em];
+    --at-apply: pl-[1em];
 
     ol,
     ul {
-      @apply pl-[2em];
+      --at-apply: pl-[2em];
     }
   }
 }

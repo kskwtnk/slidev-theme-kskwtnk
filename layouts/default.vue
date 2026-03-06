@@ -8,10 +8,10 @@
 
 <style scoped>
 :deep(> * + *) {
-  @apply mt-4;
+  --at-apply: mt-4;
 }
 
 :deep(h1) {
-  @apply text-4xl font-extrabold my-5;
+  --at-apply: text-4xl font-extrabold my-5;
 }
 </style>
