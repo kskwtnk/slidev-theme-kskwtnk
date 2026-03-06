@@ -1,89 +1,40 @@
 ---
 theme: ./
 themeConfig:
-  footerLeft: "イベントの名前や日付"
-  footerRight: "© 2026 kskwtnk"
+  headerText: "イベントの名前や日付など"
+  footerText: "コピーライトなど"
 ---
-
-<v-click at="1">
-
-<p class="text-base">タイトルの上に表示されるテキストはこのようになります</p>
-
-</v-click>
 
 # kskwtnkによるSlidevテーマ
 
 これは`layout: cover`です
 
-<v-click  at="1">
-
-複数行の本文がある場合はこのように表示されます
-
-</v-click>
-
+---
+layout: cover
 ---
 
-# What is Slidev?
+タイトルの上にテキストがある場合はこのように表示されます
 
-Slidev is a slide maker and presentation tool designed for developers. It includes the following features:
+# kskwtnkによるSlidevテーマ
 
-- 📝 **Text-based** - focus on your content with Markdown, then style it later
-- 🎨 **Themable** - themes can be shared and reused as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+これは`layout: cover`です
 
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+本文が複数行になる場合はこのように表示されます
 
 ---
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel
-
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
----
-layout: image-right
-image: https://cover.sli.dev
+layout: default
 ---
 
-# Code
+# デフォルトのレイアウト
 
-Use code snippets and get the highlighting directly!
+リストはこのように表示されます
 
-```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
+1. 順序ありリスト
+   1. ネストされた順序ありリスト
+      1. 更にネストされた順序ありリスト
+1. 順序ありリスト
 
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
----
-layout: center
-class: "text-center"
----
-
-# Learn More
-
-[Documentation](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+- 順序なしリスト
+  - ネストされた順序なしリスト
+    - 更にネストされた順序なしリスト
+- 順序なしリスト
