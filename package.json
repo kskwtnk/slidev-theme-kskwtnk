@@ -19,7 +19,9 @@
     "@slidev/types": "^52.11.4"
   },
   "devDependencies": {
-    "@slidev/cli": "^52.11.4"
+    "@slidev/cli": "^52.11.4",
+    "prettier": "^3.8.1",
+    "prettier-plugin-slidev": "^1.0.5"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {

@@ -7,7 +7,7 @@
 </template>
 
 <style scoped>
-:deep(>*+*) {
+:deep(> * + *) {
   @apply mt-4;
 }
 

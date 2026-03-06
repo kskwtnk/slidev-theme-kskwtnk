@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useSlideContext } from '@slidev/client'
+import { useSlideContext } from "@slidev/client";
 
-const { $slidev } = useSlideContext()
+const { $slidev } = useSlideContext();
 </script>
 
 <template>

@@ -17,10 +17,12 @@
     @apply list-disc;
   }
 
-  ol, ul {
+  ol,
+  ul {
     @apply pl-[1em];
 
-    ol, ul {
+    ol,
+    ul {
       @apply pl-[2em];
     }
   }
