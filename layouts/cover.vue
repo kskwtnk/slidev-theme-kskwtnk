@@ -12,6 +12,6 @@
 }
 
 :deep(h1) {
-  @apply text-6xl font-extrabold my-4;
+  @apply text-6xl font-extrabold my-5;
 }
 </style>
