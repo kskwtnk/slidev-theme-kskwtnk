@@ -29,7 +29,8 @@
       "fonts": {
         "sans": "IBM Plex Sans JP",
         "mono": "Fira Code"
-      }
+      },
+      "transition": "kskwtnk-forward | kskwtnk-backward"
     }
   }
 }

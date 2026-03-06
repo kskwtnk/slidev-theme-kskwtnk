@@ -8,4 +8,42 @@
 
 .slidev-layout {
   @apply h-full pt-6 px-6 pb-10;
+
+.kskwtnk-forward-enter-active,
+.kskwtnk-forward-leave-active,
+.kskwtnk-backward-enter-active,
+.kskwtnk-backward-leave-active {
+  transition: all 200ms cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.kskwtnk-forward-enter-from {
+  translate: 100% 0;
+}
+
+.kskwtnk-forward-enter-to {
+  translate: 0 0;
+}
+
+.kskwtnk-forward-leave-from {
+  translate: 0 0;
+}
+
+.kskwtnk-forward-leave-to {
+  translate: -100% 0;
+}
+
+.kskwtnk-backward-enter-from {
+  translate: -100% 0;
+}
+
+.kskwtnk-backward-enter-to {
+  translate: 0 0;
+}
+
+.kskwtnk-backward-leave-from {
+  translate: 0 0;
+}
+
+.kskwtnk-backward-leave-to {
+  translate: 100% 0;
 }
