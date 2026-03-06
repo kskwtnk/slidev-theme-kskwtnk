@@ -1,13 +1,13 @@
 <template>
-  <div class="slidev-layout cover flex flex-col h-full">
-    <div class="my-auto w-full">
+  <div class="slidev-layout cover flex flex-col justify-center">
+    <div>
       <slot />
     </div>
   </div>
 </template>
 
 <style scoped>
-:deep(* + *) {
+:deep(> * + *) {
   --at-apply: mt-3;
 }
 
