@@ -1,17 +1,11 @@
 <template>
-  <div class="slidev-layout section flex flex-col justify-center">
-    <div>
-      <slot />
-    </div>
+  <div class="slidev-layout section flex flex-col gap-y-4 justify-center">
+    <slot />
   </div>
 </template>
 
 <style scoped>
-:deep(> * + *) {
-  --at-apply: mt-4;
-}
-
 :deep(h1) {
-  --at-apply: text-5xl font-extrabold my-5;
+  --at-apply: text-5xl font-extrabold my-2;
 }
 </style>

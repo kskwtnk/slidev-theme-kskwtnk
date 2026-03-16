@@ -1,17 +1,13 @@
 <template>
   <div class="slidev-layout center grid place-items-center text-4xl">
-    <div>
+    <div class="flex flex-col gap-y-4">
       <slot />
     </div>
   </div>
 </template>
 
 <style scoped>
-:deep(> * + *) {
-  --at-apply: mt-3;
-}
-
 :deep(h1) {
-  --at-apply: text-6xl font-extrabold my-5;
+  --at-apply: text-6xl font-extrabold my-2;
 }
 </style>
