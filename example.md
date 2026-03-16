@@ -14,13 +14,35 @@ themeConfig:
 layout: cover
 ---
 
+<p class="text-base">
 タイトルの上にテキストがある場合はこのように表示されます
+</p>
 
 # 長めのタイトルの場合はこのように表示されます
 
 これは`layout: cover`です
 
 本文が複数行になる場合はこのように表示されます
+
+---
+layout: intro
+---
+
+::left::
+
+![](/assets/1_1.png)
+
+::right::
+
+# 綿貫 佳祐
+
+- 職種や肩書き
+- プロフィールや略歴
+- 題材やイベントにあわせた一言
+
+<div class="mt-auto text-base">
+SNS: @kskwtnk
+</div>
 
 ---
 layout: section
