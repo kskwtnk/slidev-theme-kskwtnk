@@ -8,6 +8,6 @@
 
 <style scoped>
 :deep(h1) {
-  --at-apply: text-6xl font-extrabold my-2;
+  --at-apply: text-6xl font-bold my-2 tracking-tight;
 }
 </style>

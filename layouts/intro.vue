@@ -11,6 +11,6 @@
 
 <style scoped>
 :deep(h1) {
-  --at-apply: text-5xl font-extrabold my-3;
+  --at-apply: text-5xl font-bold my-3 tracking-tight;
 }
 </style>

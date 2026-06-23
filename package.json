@@ -29,7 +29,7 @@
     "defaults": {
       "canvasWidth": 960,
       "fonts": {
-        "sans": "IBM Plex Sans JP",
+        "sans": "Shorai Sans StdN Var",
         "mono": "Fira Code"
       },
       "transition": "kskwtnk-forward | kskwtnk-backward"
