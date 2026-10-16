@@ -94,3 +94,7 @@
 .kskwtnk-backward-leave-to {
   translate: 100% 0;
 }
+
+::view-transition-group(*) {
+  animation-duration: 200ms;
+}
