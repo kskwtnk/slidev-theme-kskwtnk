@@ -31,9 +31,19 @@ Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-them
 
 ## Layouts
 
-This theme provides the following layouts:
+The `two-cols`, `two-cols-header`, `three-cols`, `three-cols-header`, `two-by-two`, and `two-by-two-header` layouts have transparent content panels by default.
+Set `panelBackground: true` in a slide's frontmatter to give every content panel a white background with horizontal (`px-5`) and vertical (`py-4`) padding:
 
-> TODO:
+```yaml
+---
+layout: two-cols-header
+panelBackground: true
+---
+```
+
+Omit `panelBackground` or set it to `false` for transparent panels without padding.
+This option changes panel backgrounds and padding; slide backgrounds, gaps between panels, and header styling stay the same.
+The existing `class` prop still applies to every content panel, and `layoutClass` applies to the whole layout.
 
 ## Components
 

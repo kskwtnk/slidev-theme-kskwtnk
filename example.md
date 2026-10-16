@@ -107,9 +107,32 @@ layout: default
 | 本文 | 説明や補足情報を配置します | 任意 |
 | 図版 | 画像やチャートで理解を助けます | 任意 |
 
+---
+layout: two-cols
+# 各領域の背景・paddingなし（未指定時も同じ）
+panelBackground: false
+---
+
+# 2カラムのレイアウト
+
+1. 順序ありリスト
+   1. ネストされた順序ありリスト
+1. 順序ありリスト
+1. 順序ありリスト
+
+::right::
+
+# 右カラム
+
+- 順序なしリスト
+  - ネストされた順序なしリスト
+- 順序なしリスト
+- 順序なしリスト
 
 ---
 layout: two-cols
+# 各領域に白背景・paddingあり
+panelBackground: true
 ---
 
 # 2カラムのレイアウト
@@ -130,6 +153,32 @@ layout: two-cols
 
 ---
 layout: two-cols-header
+# 各領域の背景・paddingなし（未指定時も同じ）
+panelBackground: false
+---
+
+# ヘッダー付き2カラムのレイアウト
+
+上部にスライド全体の見出しや導入文を置き、その下を左右に分けられます
+
+::left::
+
+1. 順序ありリスト
+   1. ネストされた順序ありリスト
+1. 順序ありリスト
+1. 順序ありリスト
+
+::right::
+
+- 順序なしリスト
+  - ネストされた順序なしリスト
+- 順序なしリスト
+- 順序なしリスト
+
+---
+layout: two-cols-header
+# 各領域に白背景・paddingあり
+panelBackground: true
 ---
 
 # ヘッダー付き2カラムのレイアウト
@@ -152,6 +201,38 @@ layout: two-cols-header
 
 ---
 layout: three-cols
+# 各領域の背景・paddingなし（未指定時も同じ）
+panelBackground: false
+---
+
+# 3カラムのレイアウト
+
+1. 順序ありリスト
+   1. ネストされた順序ありリスト
+1. 順序ありリスト
+1. 順序ありリスト
+
+::center::
+
+# 中央カラム
+
+- 順序なしリスト
+  - ネストされた順序なしリスト
+- 順序なしリスト
+- 順序なしリスト
+
+::right::
+
+# 右カラム
+
+通常の文章はこのように表示されます
+
+短い説明や補足を並べて比較できます
+
+---
+layout: three-cols
+# 各領域に白背景・paddingあり
+panelBackground: true
 ---
 
 # 3カラムのレイアウト
@@ -180,6 +261,8 @@ layout: three-cols
 
 ---
 layout: three-cols-header
+# 各領域の背景・paddingなし（未指定時も同じ）
+panelBackground: false
 ---
 
 # ヘッダー付き3カラムのレイアウト
@@ -205,6 +288,156 @@ layout: three-cols-header
 通常の文章はこのように表示されます
 
 短い説明や補足を並べて比較できます
+
+---
+layout: three-cols-header
+# 各領域に白背景・paddingあり
+panelBackground: true
+---
+
+# ヘッダー付き3カラムのレイアウト
+
+上部にスライド全体の見出しや導入文を置き、その下を3列に分けられます
+
+::left::
+
+1. 順序ありリスト
+   1. ネストされた順序ありリスト
+1. 順序ありリスト
+1. 順序ありリスト
+
+::center::
+
+- 順序なしリスト
+  - ネストされた順序なしリスト
+- 順序なしリスト
+- 順序なしリスト
+
+::right::
+
+通常の文章はこのように表示されます
+
+短い説明や補足を並べて比較できます
+
+---
+layout: two-by-two
+# 各領域の背景・paddingなし（未指定時も同じ）
+panelBackground: false
+---
+
+## 左上
+
+本文は左上に表示されます
+
+::top-right::
+
+## 右上
+
+右上の領域です
+
+::bottom-left::
+
+## 左下
+
+左下の領域です
+
+::bottom-right::
+
+## 右下
+
+右下の領域です
+
+---
+layout: two-by-two
+# 各領域に白背景・paddingあり
+panelBackground: true
+---
+
+## 左上
+
+本文は左上に表示されます
+
+::top-right::
+
+## 右上
+
+右上の領域です
+
+::bottom-left::
+
+## 左下
+
+左下の領域です
+
+::bottom-right::
+
+## 右下
+
+右下の領域です
+
+---
+layout: two-by-two-header
+# 各領域の背景・paddingなし（未指定時も同じ）
+panelBackground: false
+---
+
+# ヘッダー付き2行2列のレイアウト
+
+::top-left::
+
+## 左上
+
+左上の領域です
+
+::top-right::
+
+## 右上
+
+右上の領域です
+
+::bottom-left::
+
+## 左下
+
+左下の領域です
+
+::bottom-right::
+
+## 右下
+
+右下の領域です
+
+---
+layout: two-by-two-header
+# 各領域に白背景・paddingあり
+panelBackground: true
+---
+
+# ヘッダー付き2行2列のレイアウト
+
+::top-left::
+
+## 左上
+
+左上の領域です
+
+::top-right::
+
+## 右上
+
+右上の領域です
+
+::bottom-left::
+
+## 左下
+
+左下の領域です
+
+::bottom-right::
+
+## 右下
+
+右下の領域です
 
 ---
 layout: center
