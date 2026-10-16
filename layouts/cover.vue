@@ -6,6 +6,7 @@
 
 <style scoped>
 :deep(h1) {
-  --at-apply: text-6xl font-bold my-2 tracking-tight;
+  --at-apply: text-6xl font-bold my-2;
+  font-feature-settings: "palt";
 }
 </style>

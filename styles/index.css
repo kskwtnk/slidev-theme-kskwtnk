@@ -21,14 +21,38 @@
   ul {
     --at-apply: pl-[1em];
 
-    ol,
-    ul {
-      --at-apply: pl-[2em];
+    li {
+      --at-apply: py-0.5;
     }
   }
 
   :not(pre) > code:not(:root) {
     --at-apply: bg-stone-200 mx-1;
+  }
+
+  pre {
+    --at-apply: bg-white;
+  }
+
+  pre > code:not(:root) {
+    --at-apply: text-2xl;
+  }
+
+  table {
+    --at-apply: w-full border-collapse text-left text-xl bg-white;
+  }
+
+  th,
+  td {
+    --at-apply: border border-stone-300 px-4 py-2 align-top;
+  }
+
+  th {
+    --at-apply: bg-stone-200 font-bold;
+  }
+
+  tbody tr:nth-child(even) {
+    --at-apply: bg-stone-50;
   }
 }
 
@@ -69,4 +93,8 @@
 
 .kskwtnk-backward-leave-to {
   translate: 100% 0;
+}
+
+::view-transition-group(*) {
+  animation-duration: 200ms;
 }

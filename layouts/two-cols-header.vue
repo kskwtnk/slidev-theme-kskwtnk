@@ -2,6 +2,7 @@
 const props = defineProps<{
   class?: string
   layoutClass?: string
+  panelBackground?: boolean
 }>()
 </script>
 
@@ -13,10 +14,16 @@ const props = defineProps<{
     <div class="col-header col-span-2 flex flex-col gap-y-1">
       <slot />
     </div>
-    <div class="col-left flex flex-col gap-y-3 px-5 py-4 bg-white" :class="props.class">
+    <div
+      class="col-left flex flex-col gap-y-3"
+      :class="[props.class, { 'bg-white px-5 py-4': props.panelBackground }]"
+    >
       <slot name="left" />
     </div>
-    <div class="col-right flex flex-col gap-y-3 px-5 py-4 bg-white" :class="props.class">
+    <div
+      class="col-right flex flex-col gap-y-3"
+      :class="[props.class, { 'bg-white px-5 py-4': props.panelBackground }]"
+    >
       <slot name="right" />
     </div>
   </div>
@@ -24,6 +31,10 @@ const props = defineProps<{
 
 <style scoped>
 :deep(h1) {
-  --at-apply: text-4xl font-bold my-2 tracking-tight;
+  --at-apply: text-4xl font-bold my-2;
+  font-feature-settings: "palt";
+}
+:deep(h2) {
+  --at-apply: text-3xl font-bold;
 }
 </style>
