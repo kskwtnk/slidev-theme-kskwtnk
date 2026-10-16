@@ -51,6 +51,26 @@ This theme provides the following components:
 
 > TODO:
 
+## Mermaid
+
+Mermaid code blocks are rendered with [beautiful-mermaid](https://github.com/lukilabs/beautiful-mermaid) using Slidev's [custom renderer setup](https://sli.dev/custom/config-mermaid-renderer).
+Use Slidev 52.20.1 or later when using this theme.
+
+````md
+```mermaid
+flowchart LR
+  A[Start] --> B{Decision}
+  B -->|Yes| C[Action]
+  B -->|No| A
+```
+````
+
+Colors, font, and background use beautiful-mermaid defaults. Set `{transparent: true}` on a block to remove its background.
+Diagram options such as `{scale: 0.8}` still work; beautiful-mermaid options such as `{bg: '#ffffff', fg: '#292524'}` can also be set per block.
+
+beautiful-mermaid supports flowcharts, state, sequence, class, ER, and XY charts.
+It does not support all Mermaid syntax or standard Mermaid theme settings; diagrams such as pie and Gantt charts are not supported by this renderer.
+
 ## Contributing
 
 - `npm install`

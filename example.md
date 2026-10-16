@@ -470,3 +470,30 @@ layout: image
 ---
 
 ![](/assets/16_9.png)
+
+---
+layout: default
+---
+
+# Mermaidの描画
+
+```mermaid
+flowchart LR
+  A[情報を集める] --> B{判断する}
+  B -->|進める| C[実行する]
+  B -->|見直す| A
+```
+
+---
+layout: default
+---
+
+# シーケンス図の描画
+
+```mermaid
+sequenceDiagram
+  participant U as 利用者
+  participant S as サービス
+  U->>S: 情報を送信する
+  S-->>U: 結果を返す
+```
